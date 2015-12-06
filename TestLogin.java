@@ -128,10 +128,15 @@ class Login extends JFrame implements ActionListener{
 							result.setText("密码错误，请重新登陆！");
 							pwd.setText("");
 						}
+					}else{
+						result.setText("用户名错误，请重新登陆！");
+						username_txt.setText("");
+						pwd.setText("");
+					}
 						rs.close();
 						con.close();
 					}
-				} catch (SQLException e1) {
+				 catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
